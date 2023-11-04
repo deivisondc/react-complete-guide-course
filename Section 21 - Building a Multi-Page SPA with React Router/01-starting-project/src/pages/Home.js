@@ -4,7 +4,7 @@ function HomePage() {
   const navigate = useNavigate();
 
   function navigateHandler() {
-    navigate("/products");
+    navigate("products");
   }
 
   return (
@@ -12,7 +12,7 @@ function HomePage() {
       <h1>My homepage</h1>
 
       <p>
-        Go to <Link to="/products">the list of products</Link>
+        Go to <Link to="products">the list of products</Link>
       </p>
 
       <p>
