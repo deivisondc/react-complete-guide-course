@@ -13,7 +13,7 @@ const ErrorPage = () => {
 
   if (error.status === 500) {
     // since a response was thrown, we have to use the data property to access the content
-    message = JSON.parse(error.data).message
+    message = error.data.message
   }
 
   if (error.status === 404) {
